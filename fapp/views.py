@@ -39,7 +39,9 @@ class Fapp_Particular(APIView):
     def get(self,request,name):
         pract=self.get_object(name)
         serial=FappSerializer(pract)            
+        print("pawan")
         return Response(serial.data)
+
 
 
     
